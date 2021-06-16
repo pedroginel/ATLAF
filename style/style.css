@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* @font-face {
+  font-family: Montserrat;
+  src: url("https://fonts.google.com/specimen/Montserrat?query=montserrat");
+}
+body {
+  font-family: "Montserrat", sans-serif;
+} */
+.carousel-control-prev-icon{
+  background-image: url("/imagenes/left-arrow.svg");
+}
+.carousel-control-next-icon{
+  background-image: url("/imagenes/right-arrow.svg");
+}
+/* NAVBAR*/
+nav {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  background-color: #ff6701;
+  box-shadow: 0px 0px 5px 0.5px #898d97;
+  margin-bottom: 10px;
+}
+.btn-donar{
+  align-self: center;
+}
+@media (max-width: 450px){
+  .btn-donar{
+    align-self: flex-end;
+  }
+}
+.btn-nav {
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+padding-left: 15px;
+padding-right: 15px;
+text-decoration: none;
+}
+.palabradonar{
+  font-weight: bolder;
+  color:#ff6701;
+  font-family: Montserrat;
+  text-decoration: none;
+}
+.img-nav {
+  width: 80px;
+}
+/* NAVBAR END*/
+/* EMMA START */
+.heroParent {
+  font-family: "Montserrat", sans-serif;
+  height: 400px;
+  width: 70%;
+}
+.formParent {
+  font-family: "Montserrat", sans-serif;
+  width: 30%;
+  margin-left: 0.5rem;
+}
+.heroChild {
+  background-image: url("/imagenes/perrito4.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.heroTexto {
+  width: 60vw;
+  text-align: center;
+  color: #f8f5f1;
+}
+.h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+@media (max-width: 414px) {
+  .h1 {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+}
+.patita {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 414px) {
+  .patita {
+    width: 80px;
+    height: 80px;
+  }
+}
+.fondoForm {
+  /* outline: 2px solid crimson; */
+  height: 400px;
+  background-image: url("/imagenes/fondotodo.png");
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.formText {
+  color: black;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 4rem;
+}
+.h2Form {
+  margin-bottom: 1rem;
+  color: #ff6701;
+  font-weight: bolder;
+}
+.my-btn,
+.btn-dark {
+  background-color: #ff6701;
+  margin-top: 2rem;
+  border: none;
+}
+@media (max-width: 1100px) {
+  .heroParent {
+    width: 100%;
+    height: 450px;
+  }
+  .formParent {
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0.65rem;
+  }
+  .mycontainer-fluid {
+    flex-direction: column;
+  }
+  .fondoForm {
+    height: 300px;
+  }
+  .formText {
+    margin-top: 0.6rem;
+  }
+  .btn-dark {
+    margin-top: 0.8rem;
+  }
+}
+/* EMMA END */
+
+/* INICIA CARRUSEL MASCOTAS */
+.carruselmascotas .carousel-item{
+  min-height: 70vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.carruselmascotas .carousel-item::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.carruselmascotas .carousel-item .container{
+ position: absolute;
+ left: 50%;
+ top: 70%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+}
+.carruselmascotas .carousel-item h2{
+  font-size: 45px;
+  font-weight: 600;
+  color: #eeeeee;
+  margin: 0 0 10px;
+  opacity: 100;
+}
+.carruselmascotas .carousel-item p{
+  font-size: 20px;
+  margin: 0;
+  color: #eeeeee;
+  opacity: 100;
+}
+.carruselmascotas .carousel-item.active h2{
+animation: fadeInLeft 0.5s ease forwards;
+}
+.carruselmascotas .carousel-item.active p{
+  animation: fadeInRight 0.5s ease forwards;  
+}
+@keyframes fadeInLeft{
+  0%{
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes fadeInRight{
+  0%{
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* FINALIZA CARRUSEL MASCOTAS */
+
+/* COMIENZA CARDS SERVICIOS */
+.box-parent{
+  background-image: url(../imagenes/fondotodo.png);
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.section-title{
+  font-family: "Montserrat", sans-serif;
+  font-size: 350%;
+  color: #ff6701;
+  text-align: center;
+}
+@media (max-width: 450px){
+  .section-title{
+    font-size: 200%;
+  }
+  .btn-donar{
+    align-self: flex-end;
+  }
+}
+.box{
+  background-color: bisque;
+  width: 250px;
+  height: 315px;
+  border-radius: 5%;
+  border: white solid 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0.25s;
+  margin-bottom: 12px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box:hover{
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  height: 500px;
+}
+.box-title{
+  color: whitesmoke;
+  text-decoration: none;
+  text-shadow: .5px .5px .5px black;
+  font-size: 150%;
+}
+.boxtitle2{
+  text-decoration: none;
+  }
+.albergues{
+  position: absolute;
+}
+iframe{
+  height: 310px;
+}
+iframe:hover{
+  height: 500px;
+}
+.fondo-albergues{
+  flex-direction: column;
+  position: relative;
+}
+.fondo-tratamientos{
+  background-image: url(../imagenes/Servicios/tratamiento2.png);
+}
+.fondo-eventos{
+  background-image: url(../imagenes/Servicios/eventos6.png);
+ 
+}
+.fondo-insumos{
+  background-image: url(../imagenes/Servicios/alimento2.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FINALIZA CARDS SERVICIOS */
+
+/* Footer*/
+footer {
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  background-color: #ff6701;
+}
+
+footer li {
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.img-footer {
+  margin-bottom: 10px;
+  width: 80px;
+}
+
+.redes-footer {
+  width: 30px;
+}
+.footerIzq{
+  padding-left: 48px;
+}
+.footerMed{
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+@media (max-width: 414px){
+  .footerMed{
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  .footerIzq{
+    padding-left: 12px;
+    padding-bottom: 24px;
+  }
+}
+
+/* Footer END*/

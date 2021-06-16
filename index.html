@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME | OREJITAS CALLEJERAS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="./imagenes/Logo.png" type=""/>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <header id="nav-bar">
+      <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img  src="./imagenes/Logo.png" alt="" class="ms-lg-5 img-nav"/>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="justify-content-end collapse navbar-collapse"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ms-auto align-items-end">
+              <li class="nav-item">
+                <a class="fs-5 text-white me-2 nav-link" aria-current="page" href="./apradina.html"
+                  >APADRINÁ</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="fs-5 text-white me-2 nav-link" href="#formulario">ADOPTA</a>
+              </li>
+              <li class="nav-item">
+                <a class="fs-5 text-white me-2 nav-link" href="#servicios">SERVICIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="fs-5 text-white me-2 nav-link" href="#footer">CONTACTO</a>
+              </li>
+              <!--<button onclick="location.href='/donation'"  type="button" class="btn-nav btn fw-bold btn-outline-dark">DONAR</button>-->
+              <div class="btn-nav btn-donar">
+                   <a class="palabradonar fs-5" href="./donation.html">DONAR</a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--NAV END-->
+    <!-- ACA EMPIEZA TODA LA SECCION DE EMMA -->
+    <section class="mycontainer-fluid p-0 m-0 d-flex">
+      <!-- ACA EMPIEZA EL HERO -->
+        <section class="heroParent p-0" id="hero">
+          <div class="heroChild d-flex justify-content-center align-items-center">
+            <div class="heroTexto ms-5 me-5">
+              <img class="patita mb-1" src="./imagenes/patita3.png" alt="">
+              <h1 class="h1">OREJITAS CALLEJERAS</h1>
+              <p class="pb-3">
+                  Somos un grupo de amigas, que crearon una fundación sin fines de
+                  lucro dedicada a dar voces a aquellos que no la tienen
+              </p>
+              <a href="./donation.html">
+                <button class="btn-color btn btn-outline-light btn-lg">
+                    AYUDANOS A SALVAR VIDAS
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>      
+      <!-- ACÁ TERMINA EL HERO -->
+      <!-- ACÁ EMPIEZA EL FORMULARIO -->
+        <section id="formulario" class="formParent">
+          <div class="fondoForm">
+            <div class="row justify-content-center g-0">
+              <div class="formText">
+                <h2 class="h2Form p-0">¿ESTAS PENSANDO ADOPTAR?</h2>
+              </div>
+              <div class="formRight col-10 justify-content-center">
+                <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                  <option selected>Tipo de animal</option>
+                  <option value="1">Gato</option>
+                  <option value="2">Perro</option>
+                </select>
+                <select class="form-select form-select-lg mt-2" aria-label=".form-select-lg example">
+                  <option selected>Edad del animal</option>
+                  <option value="1">Cachorro</option>
+                  <option value="2">Joven</option>
+                  <option value="3">Adulto</option>
+                </select>
+                <select class="form-select form-select-lg mt-2" aria-label=".form-select-lg example">
+                  <option selected>Tamaño del animal</option>
+                  <option value="1">Mini</option>
+                  <option value="2">Mediano</option>
+                  <option value="3">Grande</option>
+                </select>
+                <div class="text-center">
+                  <button type="button" class="btn btn-dark my-btn">ENVIAR</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      <!-- ACÁ TERMINA EL FORMULARIO -->
+    </section>
+    <!-- ACA TERMINA TODA LA SECCION DE EMMA -->
+    <!-- INICIA CARDS MASCOTAS  -->
+    <section class="my-2">
+      <section class="carruselmascotas">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image:url(/imagenes/merida.jpg)">
+              <div class="container">
+                <h2>Mérida</h2>
+                <p>Gatita recién operada, necesita casa urgente. Preferentemente quiere un amo programador.</p>
+              </div>
+            </div>
+            <div class="carousel-item" style="background-image:url(/imagenes/perrinn.jpg)">
+              <div class="container">
+                <h2>Sancho</h2>
+                <p>Cachorro rescatado en Campo Norte, busca una familia que tenga amplio patio para jugar.</p>
+              </div>
+            </div>
+            <div class="carousel-item" style="background-image:url(/imagenes/gatitos\ abandonados1.jpg)">
+              <div class="container">
+                <h2>Familia Vizcacha</h2>
+                <p>Hermanos gatitos/as desparacitados buscan un hogar para siempre.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </section>
+    <!-- FINALIZA CARDS MACOTAS -->
+    <!-- COMIENZA CARDS SERVICIOS -->
+    <section class="container-fluid box-parent" id=servicios>
+      <div class="container box-title p-2">
+        <h1 class="section-title">SERVICIOS<h1>
+      </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="box fondo-albergues col-sm-12 col-md-6 col-lg-2 m-3">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1dT2JvlUDym69KyUjZ_penRilHavCfVMX" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div class="albergues">
+            <a class="box-title" href="">ALBERGUES</a>
+          </div>
+        </div>
+        <div class="box fondo-tratamientos col-sm-12 col-md-6 col-lg-2 m-3">
+          <div>
+            <a class="box-title" href="">TRATAMIENTOS</a>
+          </div>
+        </div>
+        <div class="box fondo-eventos col-sm-12 col-md-6 col-lg-2 m-3">
+          <div>
+            <a class="box-title" href="">EVENTOS</a>
+          </div>
+        </div>
+        <div class="box fondo-insumos col-sm-12 col-md-6 col-lg-2 m-3"> 
+          <div>
+            <a class="box-title" href="">INSUMOS</a>
+          </div>
+        </div>
+      </div>
+    </section>          
+    <!-- FINALIZA CARDS SERVICIOS -->
+<!--  FOOTER -->
+    <footer id="footer">
+      <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="footerIzq footer-left col-12 col-md-4 col-lg-4 d-flex flex-column justify-content-center align-items-center">
+          <img class="img-footer" src="./imagenes/Logo.png" alt="">
+          <h2 class="fs-6 text-white">Formulario de contacto</h2>
+          <h2 class="fs-6 text-white">atlaf@hotmail.com</h2>
+          <h2 class="fs-6 text-white">Av. San Martin 200</h2>
+          <div class="d-flex justify-content-center">
+            <a href="https://www.facebook.com" target="_blank"><img class="me-2 redes-footer" src="./imagenes/Facebook_Mesa de trabajo 1.png" alt=""></a>
+            <a href="https://www.Instagram.com" target="_blank"><img class="me-2 redes-footer" src="./imagenes/Instagram_Mesa de trabajo 1.png" alt=""></a>
+            <a href="https://www.twitter.com" target="_blank"><img class="me-2 redes-footer" src="./imagenes/twitter_Mesa de trabajo 1.png" alt=""></a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 align-self-center footerMed">
+          <h2 class="pt-2 text-center text-white" >Secciones</h2>
+            <div class="text-center pt-3">
+              <ul class="p-0">
+                <li>
+                  <a class="fs-6 text-white" href="#nav-bar">Inicio</a>
+                </li>
+                <li>
+                  <a class="fs-6 text-white" href="#hero">Quienes Somos</a>
+                </li>
+                <li>
+                  <a class="fs-6 text-white" href="#formulario"> Adoptar</a>
+                </li>
+                <li>
+                  <a class="fs-6 text-white" href="#footer"> Contacto</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="pt-4 text-center col-12 col-md-4 col-lg-4 align-self-center" >
+          <h2 class="text-white">Contacto</h2>
+          <p class="text-white">Av. Salta 152 <br>
+            San Miguiel de Tuc <br>
+            Tel 381 425 8956 <br>
+            Cel 3814 8542369 <br>
+            Fax 9814 3115489 <br>
+            CP 4000</p>
+        </div>
+      </div>
+      </div>
+    </footer>
+<!-- FOOTER END-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous">
+    </script>
+  </body>
+</html>

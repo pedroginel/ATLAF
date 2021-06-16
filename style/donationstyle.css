@@ -1,0 +1,244 @@
+/* NAVBAR*/
+nav {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    background-color: #ff6701;
+    box-shadow: 0px 0px 5px 0.5px #898d97;
+    margin-bottom: 10px;
+  }
+  .btn-nav {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+  }
+  .palabradonar{
+    color:#ff6701;
+    font-family: Montserrat;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  .img-nav {
+    width: 80px;
+  }
+/* NAVBAR*/
+main{
+    background-image: url(../imagenes/fondotodo.png);
+    background-size: contain;
+    background-position-y: 1000px;
+}
+.divderecho{
+    background: none;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+.perritosvectores{
+    width: 80%;
+    margin-left: 20px;
+    
+    }
+.headerdonation{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: #37685d;
+    height: 120px;
+}
+#logo{
+    height: 80px;
+    margin-left: 40px;
+    margin-right: 40PX;
+}
+#atlaf{
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: bolder;
+    color: white;
+}
+.debito{
+       justify-content: right;
+    
+}
+.convertite{
+    font-size: 100%;
+    font-weight: bolder;
+    text-align: right;
+    font-family: Montserrat;
+    align-items: flex-start;
+}
+.preciodebito{
+    text-align: right;
+    font-size: 60px;
+    color: #ff6701;
+}
+.buttondonation{
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ff6701;
+    background: none;
+    border-radius: 6px;
+    border: 4px solid #ff6701;
+}
+.colocarboton{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.contenedorcbu{
+    display: flex;
+    height: 10%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ffc288;
+   
+ }
+.cbus{
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    width: 15%;
+    font-family: Montserrat;
+    font-size: 60%;
+    padding: 0px;
+}
+.miembrosdebito{
+    width: 60%;
+    border-radius: 100%;
+    margin-bottom: 10%;
+}
+.nombrecbu{
+    font-size: 200%;
+    font-weight: bolder;
+}
+.colorcollapse{
+    color: rgb(255, 255, 255);
+    font-size: 120%;
+}
+.sectionveterinarias{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+.nuestrologro{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: bolder;
+    color: white;
+}
+.rescatadores{
+    color: white;
+    font-family: Montserrat;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 200%;
+    margin-bottom: 10px;
+}
+/* Footer*/
+footer {
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    background-color:#ff6701 ;
+    margin-top: 10px;
+  }
+  
+  footer li {
+    list-style: none;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  .img-footer {
+    margin-bottom: 10px;
+    width: 80px;
+  }
+  .redes-footer {
+    width: 30px;
+  }
+  .footerIzq{
+    padding-left: 48px;
+  }
+  .footerMed{
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+  }
+  @media (max-width: 414px){
+    .footerMed{
+      border-left: none;
+      border-right: none;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+    }
+    .footerIzq{
+      padding-left: 12px;
+      padding-bottom: 24px;
+    }
+  }
+/* Footer*/
+@media (max-width: 770px){
+    .divderecho{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0%;
+    }
+    .perritosvectores{
+        justify-content: center;
+        width: 100%;
+        margin: 0%;
+    }
+    .debito{
+        justify-content: center;
+        width: 100%;
+    }
+    .convertite{
+        text-align: center;
+        margin: 0%;
+        font-size: 13px;
+        font-weight: bolder;
+    }    
+    .preciodebito{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 5px;
+            }
+    .colocarboton{
+        justify-content: center;
+    
+    }
+    .buttondonation{
+        font-size: 10px;
+        border-width: 2px;
+        margin-top: 0%;
+        margin-bottom: 5px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+         }
+   .headerdonation{
+       display: flex;
+       justify-content: space-between;
+   }
+   .cbus{
+       font-size: 10px;
+   }
+}

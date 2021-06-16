@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+}
+.container-fluid {
+  color: white;
+  text-shadow: 2px 1px black;
+  height: 100%;
+  background-image: url(/imagenes/PERROCONDUEÑO.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.row {
+  width: 750px;
+}
+.tam-img {
+  height: 120px;
+  width: 120px;
+}
+.der {
+  flex-direction: column;
+  align-items: center;
+}
+.izq {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 3px solid white;
+}
+/* //TEXTOS DE DIV IZQUIERDO// */
+.tituloApa{
+  text-align: right;
+  margin-right: 0.5rem;
+}
+.parrafoApa{
+  text-align: right;
+  margin-right: 0.5rem;
+}
+.contenedorgigante{
+  position: relative;
+}
+.flotante{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+@media (max-width: 767px){
+  .izq{
+    border-bottom: 3px solid white;
+    border-right: none;
+  }
+  .tam-img{
+    margin-top: 2rem;
+  }
+  .tituloApa{
+    text-align: center;
+  }
+  .parrafoApa{    
+    text-align: center;
+  }
+  .formApa{
+    width: 90%;
+  }
+}
+@media (max-height: 680px){
+  .container-fluid{
+    height: 700px;
+  }
+}
